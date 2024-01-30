@@ -40,56 +40,56 @@ using namespace std;
     
 // }
 
-void isLargestRow(int arr[][3],int row,int col){
-    int large=0;
-    int colno=0;
-    for(int col=0; col<3; col++){
-        int sum=0;
+// void isLargestRow(int arr[][3],int row,int col){
+//     int large=0;
+//     int colno=0;
+//     for(int col=0; col<3; col++){
+//         int sum=0;
         
-            for(int row=0; row<3; row++){
-                sum+=arr[row][col];
-                if(large<sum){
-                    large=sum;
-                    colno=col;
-                }
-            }
+//             for(int row=0; row<3; row++){
+//                 sum+=arr[row][col];
+//                 if(large<sum){
+//                     large=sum;
+//                     colno=col;
+//                 }
+//             }
             
-        }
-        cout<<large<< " is the largest."<<endl;
-        cout<<"It is in column no "<<colno<<endl;
+//         }
+//         cout<<large<< " is the largest."<<endl;
+//         cout<<"It is in column no "<<colno<<endl;
     
-}
+// }
 
-void sinewave(int arr[][3],int row ,int col){
-    for(int col=0; col<3; col++){
-        if(col%2==0){
-        for(int row=0; row<3; row++){
+// void sinewave(int arr[][3],int row ,int col){
+//     for(int col=0; col<3; col++){
+//         if(col%2==0){
+//         for(int row=0; row<3; row++){
             
-                cout<<arr[row][col];
+//                 cout<<arr[row][col];
 
-            }}else{
-                for(int row=2;row>=0;row--){
-                cout<<arr[row][col];
-            }
-        }
-        cout << endl;
-    }
+//             }}else{
+//                 for(int row=2;row>=0;row--){
+//                 cout<<arr[row][col];
+//             }
+//         }
+//         cout << endl;
+//     }
 
-}
+// }
 
-int main(){
-    // create 2D array
-    int arr[3][3] ;
+// int main(){
+//     // create 2D array
+//     int arr[3][3] ;
     
 
 
    
-    //taking row wise input for array
-    for(int row=0; row<3; row++){
-        for(int col=0; col<3; col++){
-            cin >> arr[row][col];
-        }
-    }
+//     //taking row wise input for array
+//     for(int row=0; row<3; row++){
+//         for(int col=0; col<3; col++){
+//             cin >> arr[row][col];
+//         }
+//     }
 
      //taking column wise input for array
     // for(int col=0; col<3; col++){
@@ -134,11 +134,40 @@ int main(){
     //     cout<<"Element is not present in the array"<<endl; 
     // }
     
-    // cout<<"Element is not present in the array";
-    sinewave(arr,3,3);
+//     // cout<<"Element is not present in the array";
+//     sinewave(arr,3,3);
    
 
-    return 0;
+//     return 0;
 
     
+// }
+
+int main(){
+    int i;
+    int j;
+    cin>>i;
+    cin>>j;
+    int arr[3][3];
+    int a[9];
+
+    for(int n=0; n<=i; n++){
+        for(int m=0; m<=j; m++){
+            cin >> arr[n][m];
+        }
+    }
+    for(int n=0; n<=i; n++){
+        for(int m=0; m<=j; m++){
+            if(arr[n][m]==1){
+                a[n]++;
+
+        }
+            }
+            for(int n=0;n<=i;n++){
+                cout<<a[n];
+            }
+            
+    }
+
+
 }
