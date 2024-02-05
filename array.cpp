@@ -78,6 +78,13 @@ int getlength(char name[]){
 	return count;
 }
 
+//get maximum occuring character
+char getMaxOccChar(string s){
+	char arr[26]={0};
+
+}
+
+
 int main(){
 
 	char name[20];
