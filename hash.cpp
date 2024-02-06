@@ -8,6 +8,15 @@ Constraints
 1<=a[i]<=10^7
 1<=Q<=10^5
 
+input
+6
+3 5 7 7 7 8
+5
+3
+7
+5
+8
+9
 */
 #include<bits/stdc++.h>
 using namespace std;
@@ -20,7 +29,7 @@ int main(){
 	int a[n];
 	for(int i=0;i<n;i++){
 		cin>>a[i];
-		hsh[a[i]]++;
+		hsh[a[i]]++;   //new code
 	}
 	int q;
 	cin>>q;
@@ -35,6 +44,7 @@ int main(){
 		// }
 		cout<<hsh[x]<<endl;
 
-		//O(N)+O(Q*N)=O(N^2)
+		//O(N)+O(Q*N)=O(N^2) old
+		//O(N)+O(Q)=O(Q)=10^5
 	}
 }
