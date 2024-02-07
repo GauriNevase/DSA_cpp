@@ -36,7 +36,7 @@ int main(){
 	while(q--){
 		int x;
 		cin>>x;
-		int ct=0;
+		// int ct=0;
 		// for(int i=0;i<n;i++){
 		// 	if(a[i]==x){
 		// 		ct++;
