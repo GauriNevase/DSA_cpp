@@ -31,6 +31,7 @@ int main(){
 		cin>>a[i];
 		hsh[a[i]]++;   //new code
 	}
+	/*
 	int q;
 	cin>>q;
 	while(q--){
@@ -46,5 +47,11 @@ int main(){
 
 		//O(N)+O(Q*N)=O(N^2) old
 		//O(N)+O(Q)=O(Q)=10^5
-	}
+	}*/
+
+	for(int i=0;i<n;i++){
+            if(a[i]==1){
+                cout<< hsh[i];
+            }
+        }
 }

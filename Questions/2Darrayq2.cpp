@@ -1,4 +1,5 @@
-// You have been given a 2-D array 'mat' of size 'M x N' where 'M' and 'N' denote the number of rows and columns, respectively. The elements of each row are sorted in non-decreasing order.
+/* You have been given a 2-D array 'mat' of size 'M x N' where 'M' and 'N' denote the number of rows and columns, respectively.
+ // The elements of each row are sorted in non-decreasing order.
 
 
 
@@ -16,6 +17,7 @@
 // Output: true
 
 // Explanation: The output should be true as '8' exists in the matrix.
+*/
 
 #include <iostream>
 #include <vector>
