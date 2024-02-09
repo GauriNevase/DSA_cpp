@@ -1,7 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+void printVec(vector<int>v){
+		for(int i=0;i<v.size();++i){
+			//v.size=O(1)
+			cout<<v[i]<<" ";
+		}
+		cout<<endl;
+	}
+
 int main(){
+	/*pairs
 	pair<int,string>p;
 	p=make_pair(2,"abc");
 	// p={2,"abc"}    //second way to write
@@ -22,5 +31,21 @@ int main(){
 	swap(p_array[0],p_array[2]);
 	for(int i=0;i<3;i++){
 		cout<<p_array[i].first<<" "<<p_array[i].second<<endl;
+	}*/
+
+	
+
+	int a[10];
+	vector<int>v;
+	int n;
+	cin>>n;
+	for(int i=0;i<n;i++){
+		int x;
+		cin>>x;
+		printVec(v);
+
+		v.push_back(x);
 	}
+	printVec(v);
+
 }
