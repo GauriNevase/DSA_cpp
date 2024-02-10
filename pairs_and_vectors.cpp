@@ -33,7 +33,7 @@ int main(){
 		cout<<p_array[i].first<<" "<<p_array[i].second<<endl;
 	}*/
 
-	
+	/*
 
 	int a[10];
 	vector<int>v;
@@ -47,5 +47,18 @@ int main(){
 		v.push_back(x);
 	}
 	printVec(v);
+	*/
+
+	vector<int>v;
+	v.push_back(7);
+	v.push_back(6);
+	printVec(v);
+	v.pop_back();
+	printVec(v);
+
+	vector<int>v2=v;
+	v2.push_back(5);
+	printVec(v);
+	printVec(v2);
 
 }
