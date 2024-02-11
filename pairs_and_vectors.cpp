@@ -56,7 +56,7 @@ int main(){
 	v.pop_back();
 	printVec(v);
 
-	vector<int>v2=v;
+	vector<int>v2=v;  //O(n)
 	v2.push_back(5);
 	printVec(v);
 	printVec(v2);
