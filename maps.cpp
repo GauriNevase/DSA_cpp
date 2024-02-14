@@ -13,6 +13,8 @@ int main(){
 	m[1]="abc";		//O(log(n))
 	m[5]="cdc";		
 	m[3]="adc";
+
+	// m["abc"]="abcd";	//s.size()*log(n)
 	m.insert({4,"afg"});
 
 	/*//first method
