@@ -13,7 +13,7 @@ int main(){
 	//2.time complexity
 	//3.valid key datatypes
 	unordered_map<int,string >m;
-	m[1]="abc";		//O(log(n))
+	m[1]="abc";		//O(1)
 	m[5]="cdc";		
 	m[3]="adc";
 
@@ -31,9 +31,9 @@ int main(){
 		cout<<pr.first<<" "<<pr.second<<endl;
 	}
 	*/
-	// auto it=m.find(8);		//O(log(n))
-	// m.erase(3);
-	// m.clear();
+	auto it=m.find(8);		//O(1)
+	m.erase(3);			//log(1 )
+	m.clear();
 	// if(it==m.end()){
 	// 	cout<<"No value";
 	// }
