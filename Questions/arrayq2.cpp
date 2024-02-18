@@ -1,3 +1,7 @@
+/*
+leetcode 1572
+Check if array is sorted and rotated
+*/
 #include <iostream>
 #include <vector>
 using namespace std;
