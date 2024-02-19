@@ -13,21 +13,21 @@ int main(){
  ***
 ****
 */
-	int row=1;
-	while(row<=n){
-		int space=n-row;
+	int row10=1;
+	while(row10<=n){
+		int space=n-row10;
 		while(space){
 			cout<<" ";
 			space--;
 		}
 		int col=1;
-		while(col<=row){
+		while(col<=row10){
 			cout<<"*";
 			col++;
 		}
 
 		cout<<endl;
-		row++;
+		row10++;
 	}
 /*
 **** 
@@ -37,10 +37,10 @@ int main(){
 */
 	int row1=1;
 	while(row1<=n){
-		int space=n-row1+1;
-		while(space){
+		int star=n-row1+1;
+		while(star){
 			cout<<"*";
-			space--;
+			star--;
 		}
 		int col=1;
 		while(col<=row1){
@@ -104,6 +104,32 @@ int main(){
 		row3++;
 	}
 
+
+/*
+1234
+123 
+12  
+1   
+*/
+	int row6=1;
+	while(row6<=n){
+		int col=1;
+		int space1=row6-1;
+		
+		while(col<=n-space1){
+			cout<<col;
+			col++;
+		}
+		while(space1){
+			cout<<" ";
+			space1--;
+		}
+		cout<<endl;
+		row6++;
+	}
+
+	
+
 /*
 12344321
 123  321
@@ -111,14 +137,19 @@ int main(){
 1      1
 */
 
-	int row4=1;
-	while(row4<=n){
-		int col=1;
-		while(col<=row4){
-			cout<<n+row4-1;
-			col++;
-		}
-		cout<<endl;
-		row4++;
+
+for(int i=1;i<=n;i++){
+	for(int j=1;j<=n-i+1;j++){
+		cout<<j;
 	}
+	for(int j=0;j<(i-1)*2;j++){
+		cout<<" ";
+	}
+	for(int j=n-i+1;j>=1;j--){
+		cout<<j;
+	}
+	cout<<endl;
+}
+
+    
 }
